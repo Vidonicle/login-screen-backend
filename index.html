@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User & Institution Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="accountCard" class="card">
+    <h2 id="cardTitle">Select Account Type</h2>
+
+    <!-- Selection buttons -->
+    <div id="selectionBtns" class="btn-row fade show">
+      <button id="showUserForm">Create User</button>
+      <button id="showInstitutionForm">Create Institution</button>
+    </div>
+
+    <!-- User Form -->
+    <div id="userForm" class="fade">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <div class="btn-row">
+        <button id="createUserBtn">Register User</button>
+        <button id="backBtnUser">Back</button>
+      </div>
+    </div>
+
+    <!-- Institution Form -->
+    <div id="institutionForm" class="fade">
+      <input type="text" id="institutionName" placeholder="Institution Name" />
+      <input type="text" id="institutionApi" placeholder="API Token" />
+      <input type="password" id="institutionPassword" placeholder="Password" />
+      <div class="btn-row">
+        <button id="createInstitutionBtn">Register Institution</button>
+        <button id="backBtnInst">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Accounts</h2>
+  <div class="container">
+    <div class="column">
+      <h3>Users</h3>
+      <div id="usersList"></div>
+    </div>
+    <div class="column">
+      <h3>Institutions</h3>
+      <div id="institutionsList"></div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
